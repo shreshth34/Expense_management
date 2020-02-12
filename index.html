@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p> Billing: </p>
+    <select id="Billing">
+        <option value="Talview">Talview</option>
+        <option value="Client">Client</option>
+      </select>
+      <select id="Client">
+        <option value="Client1">Client1</option>
+        <option value="Client2">Client2</option>
+      </select>
+<div>
+<p>Expense Category:</p>
+<input type="radio" name="radio" value="Food" />
+<label for="Food">Food</label>
+
+<input type="radio"  name="radio" value="Travel" />
+<label for="Travel">Travel</label>
+
+<input type="radio"  name="radio" value="Stay" />
+<label for="Stay">Stay</label>
+
+<input type="radio"  name="radio" value="Other" />
+<label for="Other">Other</label>
+</div>
+
+<div>
+    
+ <p>Remark <sup>*</sup> :  <input type="text" style="height:40px"></p>
+ <p>Bills & Invoice: </p> <button> Browse File</button>
+ <p>Amount: <input type="number"> <button>+</button></p>
+</div>
+<h1>Food:</h1>
+<form action="/" method="POST" target= foodBill.js">
+    <p>Bill Date: <input type="datetime-local"></p>
+    <p> No. of Dinners:  <input type="text"></p>
+</form>
+
+<form action="/" method="post" target= "TravelBill.js">
+<h1>Travel:</h1>
+Mode: 
+<select id="travel_bill">
+    <option value="cab">cab</option>
+    <option value="Train">Train</option>
+    <option value="Bus">Bus</option>
+    <option value="Flight">Flight</option>
+    <option value="Other">Other</option>
+
+</select><br><br>
+
+From: <input type="date">
+To: <input type="date">
+
+</form>
+
+<form action="/" method="post" target="StayBill.js">
+<h1>Stay:</h1>
+From: <input type="date">
+To: <input type="date"><br><br>
+Place To Stay:  <input type="text"><br><br>
+Destination City/State/Country: <input type="text"><br><br>
+</form>
+<br><br>
+<button ="center"><h1>Save</h1></button>
+<button align="center"><h1>Cancel</h1></button>
+
+
+
+
+</body>
+</html>
